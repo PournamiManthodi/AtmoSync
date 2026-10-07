@@ -1,0 +1,36 @@
+[0m12:55:51.768942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2BF935A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2BD4B8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2C227F9D0>]}
+
+
+============================== 12:55:51.776267 | 688b8b38-3b60-41a7-8f85-eb2077086725 ==============================
+[0m12:55:51.776267 [info ] [MainThread]: Running with dbt=1.12.5
+[0m12:55:51.777706 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\pourn\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init atmosync_dbt', 'log_path': 'logs'}
+[0m12:55:51.821056 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\pourn\.dbt
+[0m12:55:51.825882 [debug] [MainThread]: Starter project path: D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:55:51.900471 [info ] [MainThread]: Setting up your profile.
+[0m13:00:17.605062 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m13:00:17.630405 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\task\init.py", line 264, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\dbt\task\init.py", line 245, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\click\termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+  File "D:\Projects\AtmoSync\.venv\Lib\site-packages\click\termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:00:17.634635 [debug] [MainThread]: Command `dbt init` failed at 13:00:17.633676 after 266.23 seconds
+[0m13:00:17.637450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2C234D220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2C235D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2C2334F30>]}
+[0m13:00:17.639154 [debug] [MainThread]: Flushing usage events
+[0m13:00:21.435352 [debug] [MainThread]: An error was encountered while trying to flush usage events
