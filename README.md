@@ -2,7 +2,6 @@
 
 **An end-to-end Data Analytics project exploring the relationship between micro-climate conditions, air quality, energy demand, energy prices, and climate-driven business opportunities.**
 
-![Project Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 ![Python](https://img.shields.io/badge/Python-Analysis-blue?logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-Data%20Analysis-blue?logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi&logoColor=black)
