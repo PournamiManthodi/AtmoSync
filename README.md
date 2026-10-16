@@ -118,7 +118,7 @@ The Power BI dashboard provides a visual overview of the project's climate and e
 
 **Dashboard screenshot:**
 
-![(https://github.com/PournamiManthodi/AtmoSync/blob/main/AtmoSync_Dashboard.pbix)](https://github.com/PournamiManthodi/AtmoSync/blob/main/AtmoSync_Dashboard.pbix)
+![Dashboard preview](https://github.com/PournamiManthodi/AtmoSync/blob/main/Dashboard/screenshot.PNG)
 
 **Power BI report file:** `dashboard/AtmoSync_Dashboard.pbix`
 
